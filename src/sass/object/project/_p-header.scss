@@ -1,0 +1,36 @@
+//------------------------------------------------------
+//　ヘッダーメニュー (header.scss)
+//------------------------------------------------------
+
+@use "../../global" as *;
+
+.p-header__wrapper {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(sp) {
+        
+    }
+}
+
+.p-header__logo {
+
+}
+
+.p-header__nav {
+    display: flex;
+    align-items: center;
+    column-gap: rem(36);
+    @include mq(sp) {
+        display: none;
+    }
+}
+
+.p-header__item {
+    a {
+        padding: rem(2);
+    }
+}

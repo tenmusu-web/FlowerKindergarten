@@ -1,0 +1,43 @@
+//_mixin.scss
+
+@use "./variables" as *;
+
+// =================================
+//  メディアクエリ
+// =================================
+
+$breakpoints: (
+    //キー : 値
+    'sp': "screen and (min-width: 519px)", //スマホサイズ
+		'tab': "screen and (min-width: 767px)",
+    'pc': "screen and (min-width: 1023px)", 
+) !default;
+
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+
+
+// =================================
+//  フォント情報の一括入力
+// =================================
+
+@mixin font($size: null, $height: null, $spacing: null, $weight: null) {
+	@if $size {
+		font-size: calc($size / 16 * 1rem);
+	}
+	@if $height {
+		line-height: calc($height / $size);
+	}
+	@if $spacing {
+		letter-spacing: calc($spacing / $size * 1em);
+	}
+	@if $weight {
+		font-weight: $weight;
+	}
+}
+
+

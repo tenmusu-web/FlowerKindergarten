@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.l-main {
+    margin-top: rem($pc-header-height);
+    @include mq(sp) {
+        margin-top: rem($sp-header-height);
+    }
+}

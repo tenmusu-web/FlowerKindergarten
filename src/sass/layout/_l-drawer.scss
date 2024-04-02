@@ -1,0 +1,112 @@
+@use "../global" as *;
+
+.l-drawer__icon {
+  display: none;
+  @include mq(sp) {
+    display: block;
+    width: rem(43);
+    height: rem(20);
+    position: relative;
+    cursor: pointer;
+    transition: all  0.3s ease;
+  }
+
+  &.is-active {
+    .bar {
+      top: rem(10);
+      right: rem(-4);
+    }
+
+    .bar1 {
+
+      transform:rotate(45deg);
+      width: rem(28);
+    }
+
+    .bar2 {
+      transform:rotate(-45deg);
+      width: rem(28);
+    }
+  }
+}
+
+.bar {
+  display: inline-block;
+  background: $white;
+  height: rem(1);
+  position: absolute;
+  right: 0;
+  transition: all  0.3s ease;
+}
+
+.bar1 {
+  width: rem(43);
+  top: rem(4);
+}
+
+.bar2 {
+  width: rem(28);
+  bottom:rem(4);
+}
+
+
+
+.l-drawer__content {
+  background: $bg-color;
+  width: 100VW;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0;
+  padding-top: rem(141);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+  &.is-active {
+    z-index: 2;
+    opacity: 1;
+  }
+}
+
+.l-drawer__nav {
+  padding-bottom: rem(85);
+}
+
+.l-drawer__item {
+  & + & {
+    margin-top: rem(55);
+  }
+  transition: all  0.3s ease;
+  a {
+    @include font(28, 42, 0, 200);
+    color: $white;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+.l-drawer__footer {
+  padding-top: rem(50);
+}
+
+.l-drawer__footer--item {
+  & + & {
+    margin-top: rem(40);
+  }
+  transition: all  0.3s ease;
+
+  a {
+    @include font(14, 19, 0, 400);
+    color: $white;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+
+
+

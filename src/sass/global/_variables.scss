@@ -1,0 +1,46 @@
+//_variables.scss
+
+
+//===========================================
+//   レイアウト (pxは書かない)
+//===========================================
+$pc-inner: 1100;  // pc版inner幅 
+$pc-sidePadding: 40; //pc版サイドのpadding
+$pc-inner-sum: calc($pc-inner + $pc-sidePadding * 2); 
+$sp-sidePadding: 24; //sp版サイドのpadding
+
+$pc-camp: 1440;
+$sp-camp: 375; 
+
+//headerの高さ
+$pc-header-height: 100;
+$sp-header-height: 70;
+
+
+//===========================================
+//   フォント
+//===========================================
+$fontFamily: 'Noto Sans JP', sans-serif; //基本のテキストフォント
+$en-fontFamily: 'Noto Sans JP', sans-serif;  //英数字のみ適応させるフォント
+$title-fontFamily: 'Noto Sans JP', sans-serif; //タイトル設定に使うフォント
+
+
+//===========================================
+//   カラー
+//===========================================
+$text-color: #3E3A39; // テキストカラー
+$base-color: #E29A0F; //一番よく使われるカラー (ファーストカラー)
+$bg-color: #FCFCFC; //背景色
+$accent-color: #F6F1E6; //アクセントカラー (セカンドカラー)
+$hover-color: #F6F1E6; //ホバーした時のカラー
+$white: #FCFCFC;
+$black: #3E3A39;
+$orange: #F2D59D;//FVリンク
+$yellow: #FDEC97;//FVリンク
+
+//===========================================
+// z-index
+//===========================================
+$z-header: 100;
+$z-drawer: 101;
+$z-drawer-icon: 102; 

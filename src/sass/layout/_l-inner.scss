@@ -1,0 +1,16 @@
+@use "../global" as *;
+
+.l-inner {
+    position: relative;
+    width: 100%;
+    max-width: px($pc-inner-sum);
+    height: inherit;
+    padding: 0 rem($sp-sidePadding);
+    margin: 0 auto;
+    
+    @include mq(tab) {
+        width: 100%;
+        padding: 0 rem($pc-sidePadding);
+    }
+}
+

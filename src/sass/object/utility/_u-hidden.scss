@@ -1,0 +1,14 @@
+@use "../../global" as *;
+
+.u-hidden {
+    &--sp {
+        @include mq(sp) {
+            display: none;
+        }
+    }
+    &--pc {
+        @include mq(pc) {
+            display: none;
+        }
+    }
+}

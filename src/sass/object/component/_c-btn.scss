@@ -1,0 +1,26 @@
+@use "../../global" as *;
+
+.c-btn {
+  display: inline-block;
+  @include font(15, 23, 0, 200);
+  color: $white;
+  text-align: center;
+  border: rem(1) solid $white;
+  border-radius: rem(39);
+  width: rem(164);
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  transition: all  0.3s ease;
+
+  @include mq(sp) {
+      @include font(13, 20, 0, 200);
+      width: rem(110);
+      padding-top: rem(5);
+      padding-bottom: rem(5);
+  }
+  &:hover {
+    color: $black;
+    background: $white;
+    border: rem(1) solid  $black;
+  }
+}

@@ -1,0 +1,16 @@
+@use "foundation";
+@use "layout";
+@use "object/component";
+@use "object/project";
+@use "object/utility";
+@use "global" as *;
+
+.test {
+    color:#ff0000;
+    font-size: rem(80);
+    position: relative;
+    padding: 100px 200px;
+    font-weight: 700;
+}
+
+

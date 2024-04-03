@@ -412,6 +412,62 @@ img {
   border: 0.0625rem solid #3E3A39;
 }
 
+.c-heading {
+  text-align: center;
+}
+.c-heading span {
+  padding-left: 22px;
+  padding-right: 22px;
+  font-family: "Righteous", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+@media screen and (min-width: 767px) {
+  .c-heading span {
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 20px;
+  }
+}
+.c-heading span::before, .c-heading span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 16px;
+  height: auto;
+  aspect-ratio: 16/15;
+  background: url(../img/icon_orange-flower.png) no-repeat center center/cover;
+}
+@media screen and (min-width: 767px) {
+  .c-heading span::before, .c-heading span::after {
+    width: 22px;
+  }
+}
+.c-heading span:before {
+  left: 0;
+}
+.c-heading span::after {
+  right: 0;
+}
+.c-heading h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+@media screen and (min-width: 767px) {
+  .c-heading h2 {
+    font-size: 32px;
+    margin-top: 8px;
+  }
+}
+
 .p-header__wrapper {
   width: 100%;
   height: inherit;

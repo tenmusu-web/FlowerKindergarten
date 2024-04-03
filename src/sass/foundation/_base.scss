@@ -18,18 +18,6 @@ body {
     line-height: 1.8;
     font-weight: 500;
     letter-spacing: 0.06em;
-    background-color: blue;
-    @include mq(sp) {
-        background-color: red;
-
-    }
-    @include mq(tab) {
-        background-color: gray;
-    
-    }
-    @include mq(pc) {
-        background-color: yellow;
-    }
 }
 
 a {

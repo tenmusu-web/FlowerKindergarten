@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -89,22 +90,6 @@ body {
   line-height: 1.8;
   font-weight: 500;
   letter-spacing: 0.06em;
-  background-color: blue;
-}
-@media screen and (min-width: 519px) {
-  body {
-    background-color: red;
-  }
-}
-@media screen and (min-width: 767px) {
-  body {
-    background-color: gray;
-  }
-}
-@media screen and (min-width: 1023px) {
-  body {
-    background-color: yellow;
-  }
 }
 
 a {
@@ -379,39 +364,9 @@ img {
   }
 }
 
-.c-btn {
-  display: inline-block;
-  font-size: 0.9375rem;
-  line-height: 1.5333333333;
-  letter-spacing: 0em;
-  font-weight: 200;
-  color: #FCFCFC;
-  text-align: center;
-  border: 0.0625rem solid #FCFCFC;
-  border-radius: 2.4375rem;
-  width: 10.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-@media screen and (min-width: 519px) {
-  .c-btn {
-    font-size: 0.8125rem;
-    line-height: 1.5384615385;
-    letter-spacing: 0em;
-    font-weight: 200;
-    width: 6.875rem;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-  }
-}
-.c-btn:hover {
-  color: #3E3A39;
-  background: #FCFCFC;
-  border: 0.0625rem solid #3E3A39;
-}
-
+/*=========================================================================
+# 共通パーツ：セクションタイトル
+========================================================================= */
 .c-heading {
   text-align: center;
 }
@@ -466,6 +421,17 @@ img {
     font-size: 32px;
     margin-top: 8px;
   }
+}
+
+/*=========================================================================
+# 共通パーツ：下層ページへのリンク
+========================================================================= */
+.c-link {
+  display: inline-block;
+  border-bottom: 1px solid yellow;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .p-header__wrapper {
